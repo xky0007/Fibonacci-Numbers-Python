@@ -50,8 +50,8 @@ If we use keys in dictionary, the code will be shorter:
 
         def fibonacci(n): 
             if n in previous.keys(): 
-        return previous[n] 
-        else: 
-            newValue = fibonacci(n-1) + fibonacci(n-2) 
-            previous[n] = newValue 
-            return newValue 
+                return previous[n] 
+            else: 
+                newValue = fibonacci(n-1) + fibonacci(n-2) 
+                previous[n] = newValue 
+                return newValue 
