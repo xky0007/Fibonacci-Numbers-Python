@@ -41,3 +41,17 @@ Second, we can write a loop to add them to the list.
         return res
         
 If we call fibonacci2(20), it will display the same result as fibonacci1(20).        
+
+3. Recursive with a dictionary:
+
+If we use keys in dictionary, the code will be shorter:
+
+        previous = {0:1, 1:1} 
+
+        def fibonacci(n): 
+            if n in previous.keys(): 
+        return previous[n] 
+        else: 
+            newValue = fibonacci(n-1) + fibonacci(n-2) 
+            previous[n] = newValue 
+            return newValue 
